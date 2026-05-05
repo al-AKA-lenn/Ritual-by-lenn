@@ -425,9 +425,8 @@ body::after {
 .testi-author {
   font-family: 'Cinzel', serif;
   font-size: 0.65rem;
-  color: var(--neon);
+  color: rgb(255, 255, 255);
   letter-spacing: 0.18em;
-  opacity: 0.5;
   text-transform: uppercase;
 }
 
@@ -435,7 +434,7 @@ body::after {
 .footer {
   text-align: center;
   font-size: 0.62rem;
-  color: rgba(57, 255, 20, 0.12);
+  color: rgb(255, 255, 255);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-top: 60px;
