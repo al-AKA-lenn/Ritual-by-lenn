@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RITUAL — Discord Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="scanline"></div>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo-wrap">
+        <img class="logo-img" src="data:image/jpeg;base64,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AAEIXQCUYAAAAAAAAAAAAAAAAAAAEMQIwAAAAAAAAAAAAAAAAAAAAAAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/xAAC/9oADAMBAAIAAwAAABDzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzgXTzzzzzzzzzzzzzzzzzzzzzh3w/zzzzzzzzzzzzzzzzzzzzzjnzHTTzzzzzzzzzzzzzzzzzi2VgUB0nzzzzzzzzzzzzzzzzh0MXEQ00/HTzzzzzzzzzzzzzhU/yxn2Vzg9nTzzzzzzzzzzzzzmRDznHXTx37zzzzzzzzzzzzDTwnWXnzU2n/wA8c088888888d8B04FhR8kVF88V8A0888884Ul1V5xttJhV3tx9FBKp08888N8988xV08Zd384pbt8d8d8888sxi1kZ1N0URJ91Nlh8NRc88888st8FcsxdBMJplE8h85888888888Y88wd4c84pNx8s5c88888888888wdToBpN0RtU8888888888888slZw8bDt8k19c8888888888888sJxZ14H5Btc8888888888888888Vr91QRB888888888888888888s9d8pt888888888888888888888E83c888888888888888888888sVc8888888888888888888888888888888888888888888888888888888888888//EABQRAQAAAAAAAAAAAAAAAAAAAJD/2gAIAQIBAT8AHH//xAAkEQABAgUEAgMAAAAAAAAAAAARIUAAARAgMTBQUXFBgWGx8P/aAAgBAwEBPwDfi4+twNQ19JbLunEeZsfPVvVePlig3hAwFs8QgiV40J6SBn77txE4QW/ixQQKBqgszOnUSYoLxCBhxagtyww9LvLYT5R0N/8A/8QAORAAAgEDAQUGBAUEAgIDAAAAAQMCBAURABASITFREyAiMkGhIzNCcUBQcoGxFDBSYSThcPAGkqL/2gAIAQEAAT8C/wDMEYykQIjJOpwlCRjIYI9PzCMTIgAZJ1abVGmj2jB8U+2rpa4VcN6HBo99ThKEjGQwR+XRiZEADJOrTahTANb8w+226WuNXHfhwaPfU4SXIxkMEflkYylIRiMk6tVpjTAN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" alt="Ritual Logo"/>
+      </div>
+      <h1 class="wordmark">Ritual</h1>
+      <p class="tagline">Discord Community</p>
+    </header>
+
+    <!-- DIVIDER -->
+    <div class="ornament reveal">
+      <div class="ornament-line"></div>
+      <span class="ornament-dot">✦</span>
+      <span class="ornament-dot">◆</span>
+      <span class="ornament-dot">✦</span>
+      <div class="ornament-line"></div>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <p class="description reveal">
+      A space for those who seek more than an ordinary community.
+      Ritual is where creators, thinkers, and visionaries gather —
+      to build, discuss, and grow together in meaningful harmony.
+    </p>
+
+    <!-- STATS -->
+    <div class="stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-target="108796">0</span>
+        <span class="stat-lbl">Members</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">Active</span>
+        <span class="stat-lbl">Status</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">50+</span>
+        <span class="stat-lbl">Channels</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2024</span>
+        <span class="stat-lbl">Est.</span>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="ornament reveal">
+      <div class="ornament-line"></div>
+      <span class="ornament-dot">◆</span>
+      <div class="ornament-line"></div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🕯️</div>
+        <div>
+          <p class="feature-title">The Inner Circle</p>
+          <p class="feature-desc">Deep discussions, unique perspectives, and conversations rarely found elsewhere.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚗️</div>
+        <div>
+          <p class="feature-title">Ritual Creation</p>
+          <p class="feature-desc">Dedicated channels to share your work, get feedback, and collaborate without limits.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📜</div>
+        <div>
+          <p class="feature-title">Knowledge Archive</p>
+          <p class="feature-desc">A curated collection of resources, guides, and insights from selected members.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🌑</div>
+        <div>
+          <p class="feature-title">Voice Sanctum</p>
+          <p class="feature-desc">Themed voice rooms for brainstorming sessions, late-night chats, and community podcasts.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🗝️</div>
+        <div>
+          <p class="feature-title">Hierarchy System</p>
+          <p class="feature-desc">Climb the community ranks, unlock exclusive access, and leave your mark in Ritual.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">✦</div>
+        <div>
+          <p class="feature-title">Recurring Events</p>
+          <p class="feature-desc">Virtual gatherings, creative challenges, and shared sessions always worth anticipating.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="ornament reveal" style="margin-top:28px;">
+      <div class="ornament-line"></div>
+      <span class="ornament-dot">✦</span>
+      <span class="ornament-dot">◆</span>
+      <span class="ornament-dot">✦</span>
+      <div class="ornament-line"></div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section reveal">
+      <a class="cta-btn" href="https://discord.com/invite/ritual-net" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36">
+          <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
+        </svg>
+        Enter Ritual
+      </a>
+      <p class="cta-sub">Free access · Curated community</p>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="ornament reveal">
+      <div class="ornament-line"></div>
+      <span class="ornament-dot">◆</span>
+      <div class="ornament-line"></div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials">
+      <div class="testi">
+        <p class="testi-quote">"Unlike any other Discord server. Every conversation here carries real depth and genuine meaning."</p>
+        <p class="testi-author">@Lloyd Frontera</p>
+      </div>
+      <div class="testi">
+        <p class="testi-quote">"Joining Ritual was one of the best decisions I made this year. The community is rare, the content is solid."</p>
+        <p class="testi-author">@Shirone Arian</p>
+      </div>
+      <div class="testi">
+        <p class="testi-quote">"I met my startup co-founder here. Ritual is not just a server — it's an ecosystem."</p>
+        <p class="testi-author">@Lucas Traumen</p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer reveal">
+      © 2024–2026 &nbsp;✦&nbsp; Ritual Discord Community &nbsp;✦&nbsp; ritual-net
+    </footer>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
