@@ -266,7 +266,7 @@ body::after {
 
 .stat-lbl {
   font-size: 0.58rem;
-  color: rgba(57, 255, 20, 0.25);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   letter-spacing: 0.14em;
 }
